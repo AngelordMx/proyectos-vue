@@ -23,7 +23,7 @@ import { RouterLink, RouterView } from 'vue-router'
 					<!-- Opciones del Menú -->
 					<ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-300 rounded-box w-52 mt-4">
 						<li><RouterLink to="/practica_7">Práctica 7</RouterLink></li>
-						<li><RouterLink to="/practica_7r">Práctica 7 (Ramiro)</RouterLink></li>
+						<li><RouterLink to="/practica_7R">Práctica 7 (Ramiro)</RouterLink></li>
 						<li><RouterLink to="/practica_7f">Práctica 7 (Fox)</RouterLink></li>
 					</ul>
 				</div>

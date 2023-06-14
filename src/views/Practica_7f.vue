@@ -81,4 +81,5 @@ function reseteo_favoritos() {
 			</div>
 		</div>
 	</div>
+	
 </template>

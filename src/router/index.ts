@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Practica_7f from '@/views/Practica_7f.vue'
 import Practica_7 from '@/views/Practica_7.vue'
+import Practica_7r from '@/views/Practica_7R.vue'
 import Inicio from '@/views/Inicio.vue'
 
 const router = createRouter({
@@ -20,6 +21,11 @@ const router = createRouter({
 			path: '/practica_7f',
 			name: '/practica_7f',
 			component: Practica_7f
+		},
+		{
+			path: '/practica_7R',
+			name: '/practica_7R',
+			component: Practica_7r
 		}
 	]
 })
