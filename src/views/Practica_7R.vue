@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { computed, ref, type Ref } from 'vue';
 
-
+let textojugador = document.getElementById('textojugador')
+let botonRestart = document.getElementById('botonRestart')
+let casillas = document.getElementsByClassName('casillas')
+console.log(casillas)
 const ManerasGanar=[
 	[0,1,2],
 	[3,4,5],
@@ -12,8 +15,13 @@ const ManerasGanar=[
 	[0,4,8],
 	[2,4,6],
 ]
-const edoJuego = true;
-const jugadorActual = "O";
+const turnos = ["", "", "", "", "", "", "", "", ""]
+const juegoActivo = true;
+const jugadorActual = "X";
+function InicioJuego(){
+
+}
+
 </script>
 
 <template>
@@ -22,28 +30,28 @@ const jugadorActual = "O";
 			<h2 class="card-title">Gatito</h2>
 
 			<!-- Botones superior -->
-			<div class="flex bg color bg-green-400 space-x-5">
+			<div class=" space-x-5">
 				<button class="btn join-item w-12"></button>
 				<button class="btn join-item w-12"></button>
 				<button class="btn join-item w-12"></button>
 			</div>
 
 			<!-- Botones centro -->
-			<div class="flex bg color bg-red-400 space-x-5">
+			<div class=" space-x-5">
 				<button class="btn join-item w-12"></button>
 				<button class="btn join-item w-12"></button>
 				<button class="btn join-item w-12"></button>
 			</div>
 
 			<!-- Botones inferior -->
-			<div class="flex bg color bg-green-400 space-x-5">
+			<div class=" space-x-5">
 				<button class="btn join-item w-12"></button>
 				<button class="btn join-item w-12"></button>
 				<button class="btn join-item w-12"></button>
 			</div>
 			<h2 class="card-title">¡Ganador!</h2>
 			<div class="alert flex justify-center">
-				<span>{{ 5 }}</span>
+				<span>{{ "Equipo "  }}</span>
 			</div>
 
 
